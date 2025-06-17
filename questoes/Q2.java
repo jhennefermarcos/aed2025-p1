@@ -12,6 +12,7 @@ public class Q2 {
         //Entrada
 
         //Processamento
+        resolverSenhaFixa();
         // resolverSenhaFixa();
         
     }
@@ -19,6 +20,22 @@ public class Q2 {
     public static void resolverSenhaFixa(){
 
         // Sua solução aqui
+
+        String senhaDigitada = "null";
+        String senhaValida = "2002";
+
+        IO.imprimir("Digite a senha numérica:");
+        senhaDigitada = IO.lerFrase();
+    
+        while(!senhaDigitada.equals(senhaValida)){
+            if (senhaDigitada.equals(senhaValida)){
+                IO.imprimir("Acesso permitido!");                
+            }else{
+                IO.imprimir("Senha inválida!");
+                senhaDigitada = IO.lerFrase();
+            }
+        }
+
         
     }
 
