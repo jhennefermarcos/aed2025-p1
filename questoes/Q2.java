@@ -21,22 +21,18 @@ public class Q2 {
 
         // Sua solução aqui
 
-        String senhaDigitada = "null";
+        String senhaDigitada;
         String senhaValida = "2002";
 
         IO.imprimir("Digite a senha numérica:");
         senhaDigitada = IO.lerFrase();
     
         while(!senhaDigitada.equals(senhaValida)){
-            if (senhaDigitada.equals(senhaValida)){
-                IO.imprimir("Acesso permitido!");                
-            }else{
-                IO.imprimir("Senha inválida!");
-                senhaDigitada = IO.lerFrase();
-            }
-        }
+           IO.imprimir("Senha inválida!");
+           senhaDigitada = IO.lerFrase();
+           }
 
+        IO.imprimir("Acesso permitido!");
+        }
         
     }
-
-}

@@ -11,8 +11,8 @@ clean:
 	rm -r bin
 
 git:
-	git config --global user.name "Darlon Vasata"
-	git config --global user.email "darlonv@gmail.com"
+	git config --global user.name "Jhennefer Marcos"
+	git config --global user.email "jhennefermarcos@gmail.com"
 
 test: test_q1 test_q2 test_q3
 
